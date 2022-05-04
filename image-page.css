@@ -117,8 +117,6 @@ section p {
 
 .photo-container img {
   flex: 1 1;
-  height: 400px;
-  width: 400px;
 }
 
 .photo-container img:last-child {

@@ -1,0 +1,131 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap");
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  font-family: "Work sans";
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: contain;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  height: 100vh;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* nav styles */
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 50px;
+}
+
+/* Hamburger button styles */
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 8px;
+  width: 40px;
+  height: 30px;
+  z-index: 10;
+  transition: all 0.25s;
+}
+
+.top-burger,
+.middle-burger,
+.bottom-burger {
+  width: 40px;
+  height: 3px;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.open .top-burger {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .middle-burger {
+  display: none;
+}
+
+.open .bottom-burger {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* About Container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about-container h3 {
+  color: white;
+  font-family: "Bebas Neue";
+  font-size: 6.4rem;
+  margin-bottom: 24px;
+}
+
+.about-container p {
+  color: white;
+  font-family: "Arial";
+  font-size: 1.8rem;
+  line-height: 1.6;
+  width: 1000px;
+}
+
+/* Link styles */
+
+.links-container {
+  width: 300px;
+  margin-top: 50px;
+}
+
+.links-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 4px;
+}
+
+.links-container a {
+  font-size: 5rem;
+  color: white;
+  font-family: "Bebas Neue";
+}
+
+.links-container small {
+  font-size: 5rem;
+  color: white;
+  font-family: "Bebas Neue";
+}
